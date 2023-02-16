@@ -20,7 +20,7 @@ const App = () => {
     newNotes[index] = newNote;
     setNotes(newNotes);
   };
-
+ 
   return (
     <div className="App">
       <h1 className="header">Note Taking App</h1>
@@ -45,20 +45,4 @@ const App = () => {
                 className="delete-button"
                 onClick={() => deleteNote(index)}
               >
-                Delete
-              </button>
-              <button
-                className="edit-button"
-                onClick={() => editNote(index, prompt("Edit note"))}
-              >
-                Edit
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default App;
+                
